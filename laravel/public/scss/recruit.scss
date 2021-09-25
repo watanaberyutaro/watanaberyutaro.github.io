@@ -1,0 +1,110 @@
+.recruit__ttl{
+    background: url(../img/recruit.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-blend-mode:lighten;
+    background-color:rgba(255,255,255,0.4);
+    height: 200px;
+}
+.recruit__ttll{
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+    color: #414141;
+    font-weight:500;
+    display: inline-block;
+    margin: 0;
+    font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+#wrapper #contents .guideline {
+  margin: 0 auto 5em;
+}
+#wrapper #contents .guideline .r-title {
+  margin: 0 auto 2em;
+  padding: 0.3em 1em;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  background-color: #fafafa;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+#wrapper #contents .guideline .state {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+#wrapper #contents .guideline .state .read {
+  text-align: center;
+  margin: 0 auto 3em;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px solid #ccc;
+}
+#wrapper #contents .guideline table {
+  margin: 0 auto 3em;
+  width: 90%;
+}
+#wrapper #contents .guideline table tr th {
+  background: none;
+  border: none;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+#wrapper #contents .guideline table tr td a {
+  text-decoration: underline;
+}
+#wrapper #contents .guideline table tr td a:hover {
+  text-decoration: none;
+}
+#wrapper #contents .guideline h3 {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 0.3em 2em;
+  margin: 0 auto 1em;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+.entry-format {
+  zoom: 1;
+  word-wrap: break-word;
+}
+.tbody {
+  display: table-row-group;
+}
+table {
+  text-indent: initial;
+  border-spacing: 2px;
+  border-collapse: collapse;
+}
+table tr {
+  border-bottom: 1px solid #ccc;
+  display: table-row;
+}
+table tr:first-child {
+  border-top: 1px solid #ccc;
+}
+#wrapper #contents .guideline table tr th {
+  background: none;
+  border: none;
+}
+.entry-format th {
+  font-size: 1em;
+  font-weight: bold;
+}
+.entry-format td {
+  font-size: 1em;
+}
+.entry-format th, .entry-format td {
+  padding: 10px 15px;
+  border-width: 0 0 1px 1px;
+  text-align: left;
+  vertical-align: top;
+}
+.entry-format table, .entry-format th, .entry-format td {
+  border-style: solid;
+  border-color: #c2c2c2;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+}
+table tr th {
+  width: 20%;
+}
