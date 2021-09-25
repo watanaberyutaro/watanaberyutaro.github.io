@@ -1,299 +1,206 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="keywords" content="株式会社CONVICTION, CONVICTION, Webエンジニア, Webデザイナー, システムエンジニア, 企業プロジェクトサポート">
-  <meta name="description" content="システムエンジニアリングサービスやSE受託開発サービスなど、お客様の求めるニーズに合わせてお客様のプロジェクト業務をサポートする株式会社CONVICTIONの公式HPです。">
-  <meta name="author" content="株式会社CONVICTION">
-  <title>株式会社CONVICTION</title>
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="株式会社CONVICTION">
-  <meta property="og:description" content="システムエンジニアリングサービスやSE受託開発サービスなど、お客様の求めるニーズに合わせてお客様のプロジェクト業務をサポートする株式会社CONVICTIONの公式HPです。">
-  <meta property="og:url" content="https://www.conviction-inc.com/">
-  <meta property="og:image" content="https://www.conviction-inc.com/assets/images/ogp.jpg">
-  <meta property="fb:admins" content="">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="株式会社CONVICTION">
-  <meta name="twitter:description" content="システムエンジニアリングサービスやSE受託開発サービスなど、お客様の求めるニーズに合わせてお客様のプロジェクト業務をサポートする株式会社CONVICTIONの公式HPです。">
-  <meta name="twitter:url" content="https://www.conviction-inc.com/">
-  <meta name="twitter:image" content="https://www.conviction-inc.com/assets/images/ogp.jpg">
-  <link rel="apple-touch-icon" type="image/png" href="assets/favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="assets/favicons/icon-192x192.png">
-  <link href="assets/scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/scripts/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="assets/scripts/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="assets/styles/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-  <div id="splash">
-    <div class="progress"></div>
-    <div class="bland">
-      <img src="assets/images/logo.png" alt="">
-    </div>
-  </div>
-  <!-- Masthead -->
-  <div id="scroll-spacer">
-    <header class="masthead">
-      <div id="bland">
-        <h1>
-          <img src="assets/images/logo.png" alt="株式会社CONVICTIO">
-          <p>株式会社CONVICTION</p>
-        </h1>
-      </div>
-      <div id="hero-scroll">
-        <p>SCROLL</p>
-        <div id="hero-scroll-bar">
-          <div id="hero-scroll-bar-in"></div>
-        </div>
-      </div>
-      <div id="hero">
-        <div class="hero-title">
-        	<p class="catch-en">Open place for Growth members</p>
-					<p class="catch-ja">皆でつくっていきたい！</p>
-        </div>
-      </div>
-    </header>
-  </div>
-  <section class="message position-relative">
-    <div class="message-expand col-md-10 col-11 text-center position-relative">
-      <div class="message-expand-body position-relative">
-        <h2 class="message-title">
-          <div class="en">MESSAGE</div>
-          <div class="ja">いつまでも続く暖かい場所を作ります</div>
-        </h2>
-        <p class="message-text">人の温もりを感じる介護を介護業界へテクノロジーで貢献へ<br />何年後も続く温もりの会社にこの仲間と作った環境を未来へ繋げる</p>
-      </div>
-      <div class="message-expand-bg"></div>
-    </div>
-  </section>
-  <section class="about position-relative overflow-hidden">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="position-relative col-sm-6 order-sm-2">
-          <div class="about-image">
-            <picture>
-	            <img src="assets/images/about-1.jpg" alt="" class="img-fluid">
-	          </picture>
-          </div>
-        </div>
-	      <div class="about-intro-body col-sm-6 order-sm-1 d-flex justify-content-center flex-column">
-            <h2>
-              <div class="en">ABOUT US</div>
-              <div class="ja">システムエンジニアリングサービス<br />SE受託開発サービス</div>
-            </h2>
-            <p>お客様の求めるニーズに合わせて、当社のエンジニアが企業内に常駐し、お客様のプロジェクト業務をサポート致します。常時人材のスキルアップ、コミニケーション力向上など、教育をして、お客様へのサポートに向け準備をしています。急なイレギュラー、人材不足なども迅速に対応致します。 向上心を持ちお客様との友好的な関係を目指し、効率的な業務運営をサポート致します。</p>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        </div>
-      </div>
-      <div class="row no-gutters">
-	      <div class="position-relative col-sm-6 order-sm-3">
-          <div class="about-image">
-            <picture>
-	            <img src="assets/images/about-2.jpg" alt="" class="img-fluid">
-	          </picture>
-          </div>
-	      </div>
-        <div class="about-intro-body col-sm-6 order-sm-4 d-flex justify-content-center flex-column">
-            <h2>
-              <div class="en">PHILOSOPHY</div>
-              <div class="ja">理念</div>
-            </h2>
-              <p>繋がる人たちの目標を会社の「目標」に必ず力になれるという「気持ち」を一歩ずつ進む働くひとたちの「居場所」に充実した環境を皆で作る！</p>
-            </h2>
+        <title>Laravel</title>
 
-	      </div>
-      </div>
-    </div>
-  </section>
-  <section class="recruit position-relative overflow-hidden">
-    <div class="container">
-      <div class="row">
-        <div class="header col-12 text-center">
-          <h2>RECRUIT</h2>
-          <h3>ゼロから始める一歩を共に進んでいきたい！<br />働く貴方を全力でサポートします。</h3>
-          <div class="recruit-text">株式会社CONVICTIONは設立して１期目の会社になります。<br />
-            一緒に盛り上げてこう！と思える方を募集しています。<br />
-            居場所を見つけ、チャンスを活かして、未来に進む、働く一人ひとりの目標が、会社の目標です！<br />
-            そんな貴方と一緒に仕事がしたいです！！</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 col-6 mb-5 p-sm-0">
-          <div class="recruit-item mb-lg-0">
-            <h5>仕事の内容</h5>
-            <p class="mb-0">Webエンジニア<br />Webデザイナー<br />システムエンジニア<br />企業プロジェクトサポート</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-6 mb-5 p-sm-0">
-          <div class="recruit-item mb-lg-0">
-            <h5>必要条件</h5>
-            <p class="mb-0">未経験者歓迎・経験者歓迎<br />未経験エンジニア歓迎</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-6 mb-5 p-sm-0">
-          <div class="recruit-item mb-lg-0">
-            <h5>休暇</h5>
-            <p class="mb-0">完全週休2日制<br />年末年始休暇<br />夏季休暇（夏季２日間自由取得）<br />ほか</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-6 mb-5 p-sm-0">
-          <div class="recruit-item mb-lg-0">
-            <h5>
-              <span class="category">待遇・福利厚生</span>
-            </h5>
-            <p class="mb-0">昇給年1回 通勤交通費支給（2万円）<br />社保完備</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="company">
-    <div class="company__wrap">
-      <div class="header　col-12 text-center companyTtlWrap">
-        <h2 class="company__ttl">
-          <div class="en company-en">COMPANY</div>
-          <div class="ja company-ja">企業情報</div>
-        </h2>
-      </div>
-        <div class="companyInfo">
-          <dl class="companyInfo__list">
-            <dt class="companyInfo__dt">会社名</dt>
-            <dd class="companyInfo__dd">株式会社CONVICTION</dd>
-          </dl>
-          <dl class="companyInfo__list">
-            <dt class="companyInfo__dt">代表者</dt>
-            <dd class="companyInfo__dd">森村有希央</dd>
-          </dl>
-          <dl class="companyInfo__list">
-            <dt class="companyInfo__dt">所在地</dt>
-            <dd class="companyInfo__dd">東京都渋谷区神南1-20-2<br>第一清水ビル4F</dd>
-          </dl>
-          <dl class="companyInfo__list">
-            <dt class="companyInfo__dt">設立</dt>
-            <dd class="companyInfo__dd">2020年3月</dd>
-          </dl>
-          <dl class="companyInfo__list">
-            <dt class="companyInfo__dt">資本金</dt>
-            <dd class="companyInfo__dd">300万円</dd>
-          </dl>
-          <dl class="companyInfo__list">
-            <dt class="companyInfo__dt">事業内容</dt>
-            <dd class="companyInfo__dd">SES/受託開発</dd>
-          </dl>
-        </div>
-    </div>
-  </section>
-  <section class="access position-relative overflow-hidden">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-	      <div class="position-relative col-12">
-          <div class="gmap-wrap position-relative">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.6127382859345!2d139.69792791563992!3d35.66191178019879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca88ae1bdff%3A0x6a162b1b76d106f!2z44CSMTUwLTAwNDEg5p2x5Lqs6YO95riL6LC35Yy656We5Y2X77yR5LiB55uu77yS77yQ4oiS77ySIOa4heawtOODk-ODqyA0Rg!5e0!3m2!1sja!2sjp!4v1609075248836!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-          <div class="contents outline col-md-5 col-sm-12">
-            <div class="contents-body position-relative">
-              <div class="header">
-                <h2>
-                  <div class="en">ACCESSMAP</div>
-                  <div class="ja">アクセスマップ</div>
-                </h2>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+        <link href="/css/app.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500;600;700&amp;family=Open+Sans:wght@600&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&amp;display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/js/script.js"></script>
+    </head>
+    <body>
+      <header id="header">
+        <div class="nav-wrapper"><!-- ②ナビゲーションメニュー -->
+                <nav class="header-nav">
+                  <ul class="nav-list">
+                  <li class="nav-item"><a href="/index">ホーム</a></li>
+                  <li class="nav-item"><a href="/work">会社を知る</a></li>
+                  <li class="nav-item"><a href="/human">仲間を知る</a></li>
+                  <li class="nav-item"><a href="/message">採用担当者からあなたへ</a></li>
+                  <li class="nav-item"><a href="/recruit">採用情報</a></li>
+                  </ul>
+                </nav>
               </div>
-              <address>
-                <ul>
-                  <li>〒150-0041</li>
-                  <li>東京都渋谷区神南1-20-2 第一清水ビル4F</li>
-                  <li>TEL : 03-6260-8700</li>
-                  <li>Mail : info@conviction-inc.com</li>
+            <div class="burger-btn">
+                <div class="h-nav__menu" id="headerNav">
+                  <div><span></span></div>
+                </div>
+            </div>
+            </div>
+            <div class="header">
+              <a href="/index"><img class="header__logo" src="/img/logo.png" alt="Creation Co,Ltd"></a></h1>
+              <nav>
+                <ul class="header__gnav">
+                  <li><a href="/work">会社を知る</a></li>
+                  <li><a href="/human" class="nav__item">仲間を知る</a></li>
+                  <li><a href="/message" class="nav__item">採用担当者からあなたへ</a></li>
+                  <li> <a href="/recruitMidcareer" class="nav__item">採用情報</a></li>
+                  <li class="header__gnav-btn"><a href="/entry">ENTRY</a></li>
                 </ul>
-              </address>
-              <div class="position-relative">
-                <a id="contact-trigger" class="btn" href="#contact-modal">
-                  <div class="submit-label">お問い合わせ</div>
-                </a>
-              </div>
+              </nav>
             </div>
-            <div class="contents-bg"></div>
-          </div>
-	      </div>
+          </header>
+          <div class="header__space"></div>
 
-      </div>
+          @if ($message)
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script type="text/javascript">
+    const message = '{{$message}}';
+    swal(message);
+</script>
+@endif
+<div class="hero">
+    <div class="hero__ttl">
+        <h2 class="hero__ttl-text"><object type="image/svg+xml" data="https://creation2016.co.jp/wp-content/themes/creation/assets/svg/top/text-hero-value.svg" class="hero__value"></object> <span>for things,</span><br /><object type="image/svg+xml" data="https://creation2016.co.jp/wp-content/themes/creation/assets/svg/top/text-hero-value.svg" class="hero__value"></object> <span>for the time.</span></h2>
+        <p class="hero__middle">モノに価値を、<span>時代に価値を。</span></p>
+        <p class="hero__small">Creation.co.Ltd RECRUITMEN</p>
     </div>
-  </section>
-  <footer class="footer position-relative overflow-hidden">
-    <p class="copy">Copyright©2020 CONVICTION All Rights Reserved.</p>
-  </footer>
-  <div class="contact-modal modal" id="contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-close-wrap position-fixed">
-      <button id="close" class="modal-close position-relative d-flex justify-content-center align-items-center"  data-dismiss="modal">
-        <span class="position-absolute d-block">
-            <div class="col-12 line-1"></div>
-        </span>
-        <span class="position-absolute d-block">
-            <div class="col-12 line-2"></div>
-        </span>
-        <div class="position-absolute d-block col-12"></div>
-      </button>
-    </div>
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div class="modal-header col-12">
-              <h4>お問い合わせフォーム</h4>
-            </div>
-            <div class="modal-body">
-              <div class="flow">
-                <div class="modal-title">お問い合わせの流れ</div>
-                <ol class="step">
-                  <li>1. 下記送信フォームより送信して下さい。</li>
-                  <li>2. 担当者よりご連絡いたします。</li>
-                </ol>
-              </div>
-              <form id="contactForm" name="contactForm">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label>お名前 <span class="badge">必須</span><span class="validation"></span></label>
-                    <input type="text" name="name" class="required form-control form-control-lg" placeholder="お名前をご入力ください">
-                    </div>
-                  <div class="form-group col-md-6">
-                    <label>お名前フリガナ <span class="badge">必須</span><span class="validation"></span></label>
-                    <input type="text" name="phonetic" class="required form-control form-control-lg" placeholder="全角カタカナでご入力ください">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label>電話番号</label>
-                    <input type="text" name="phone" class="required form-control form-control-lg" placeholder="ハイフン有りの電話番号を入力してください">
-                    </div>
-                  <div class="form-group col-md-6">
-                    <label>メールアドレス <span class="badge">必須</span><span class="validation"></span></label>
-                    <input type="text" name="mail" class="required form-control form-control-lg" placeholder="半角英数で入力してください">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label>その他ご質問等あれば、お書きください。</label>
-                  <textarea rows="12" cols="5" name="comments" id="comments" class="form-control" placeholder=""></textarea>
-                </div>
-                <div id="message"></div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" name="donate" id="submit" class="col-md">
-                <div id="submit-label">送信する</div>
-                <div id="submit-bg"></div>
-              </button>
-            </div>
-
-          </div>
+</div>
+<section class="index__work">
+    <div class="work__ttl"></div>
+    <h2 class="mission__ttl">私たちの使命</h2>
+    <div class="mission__item">
+        <div class="mission__imgBox">
+            <img src="img/tower.jpg" alt="img2" class="mission__img">
         </div>
-      </div>
-      <div class="sheet-bg"></div>
+        <div class="mission__descBox">
+            <p class="mission__desc ">どんな事にも”貪欲”に<br>そして”謙虚”であれ</p>
+            <p class="mission__text">「企画提案力」「リピート率」「ブランディング」「デザイン力」「運用率」全てが弊社の武器でもありそれらが評価される部分だと理解し考える事を止めず、行動と結果を見せていきます。</p>
+            <a href="/work" class="mission__button">
+            <div class="more">会社を知る</div>
+            </a>
+        </div>
     </div>
-  </div>
+</section>
+<div class="space-100"></div>
+<section class="index__human">
+<div class="friend__ttl"></div>
+    <h2 class="human__ttl">私たちの仲間</h2>
+    <div class="space-50"></div>
+    <div class="human__descBox">
+        <p class="human__text">Creationの最前線で活躍している<br>社員のインタビューがご覧いただけます。</p>
+    </div>
+    <div class="human__box">
+        <ul class="human__list">
+            <li class="human__item no1">
+                <a href="/saito" class="interview__item">
+                <div class="interview__iconBox">
+                    <img src="/img/icon.jpeg" alt="icon1" class="human__icon">
+                    </div>
+                    <span class="interview__detail">事業統括マネージャー</span>
+                    <div class="interview__box">
+                        <span class="interview__time">入社年月日</span>
+                        <span class="interview__jname">齋藤 祐次</span>
+                        <span class="interview__ename">YUJI SAITO</span>
+                    </div>
+                    <div class="mask">
+                        <div class="caption">Creationはあなたにとってどんな会社ですか？</div>
+                    </div>
+                </a>
+            </li>
+            <li class="human__item">
+            <a href="/hirano" class="interview__item">
+            <div class="interview__iconBox">
+                    <img src="/img/icon.jpeg" alt="icon1" class="human__icon">
+                    </div>
+                    <span class="interview__detail">営業部</span>
+                    <div class="interview__box">
+                        <span class="interview__time">入社年月日</span>
+                        <span class="interview__jname">平野 洋輔</span>
+                        <span class="interview__ename">YOSUKE HIRANO</span>
+                    </div>
+                    <div class="mask">
+                        <div class="caption">Creationはあなたにとってどんな会社ですか？</div>
+                    </div>
+                </a>
+            </li>
+            <li class="human__item no1">
+            <a href="/saito" class="interview__item">
+                    <div class="interview__iconBox">
+                    <img src="/img/icon.jpeg" alt="icon1" class="human__icon">
+                    </div>
+                    <span class="interview__detail">肩書き</span>
+                    <div class="interview__box">
+                        <span class="interview__time">入社年月日</span>
+                        <span class="interview__jname">齋藤 祐次</span>
+                        <span class="interview__ename">YUJI SAITO</span>
+                    </div>
+                    <div class="mask">
+                        <div class="caption">Creationはあなたにとってどんな会社ですか？</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="human__moreBox">
+        <a href="/human">
+            <div class="more">仲間を知る</div>
+        </a>
+    </div>
+</section>
 
-  <script src="assets/scripts/jquery/jquery.min.js"></script>
-  <script src="assets/scripts/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/scripts/app.js"></script>
-</body>
+<section class="index__message">
+
+    <div class="message__item">
+        <div class="message__left">
+            <div class="message__ttlimg"></div>
+            <h2 class="message__ttl">採用担当より</h2>
+            <div class="message__descBox">
+                <p class="message__text">求める人材<br>クリエイションはどんなことをしているか<br>などの文章をここに入れます。</p>
+                <div class="message__more">
+                    <a href="/message" class="message__more">
+                    <div class="more">詳しく見る</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="message__imgBox">
+            <img src="/img/forest.jpg" alt="img2" class="message__img">
+        </div>
+    </div>
+</section>
+<div class="space-100"></div>
+<section class="index__recruit">
+    <div class="recruit__ttlimg"></div>
+    <h2 class="mission__ttl">採用情報
+    </h2>
+    <div class="human__descBox">
+        <p class="human__text">Creationではでは現在、各ポジションで募集を行っています。</p>
+    </div>
+    <div class="recruit__wrap">
+                <a href="/recruitNewgraduates" class="recruit__left">
+                    <div class="recruit__link">募集要項</div>
+                </a>
+    </div>
+</section>
+<div class="space-100"></div>
+@include('layout.footer')
+
+
+          
+          <footer class="footer">
+            <div class="footer__links">
+                <a href="/work" class="nav__item">会社を知る</a>
+                <a href="/human" class="nav__item">仲間を知る</a>
+                <a href="/message" class="nav__item">採用担当者からあなたへ</a>
+                <a href="/recruitNewgraduates" class="nav__item">採用情報</a>
+            </div>
+            <div class="footer__bottom">
+                <a href="https://creation2016.co.jp/" class="footer__link">
+                    <img src="https://creation2016.co.jp/wp-content/themes/creation/assets/img/common/icon-logo.png" alt="logo" class="footer__logo">
+                    <p class="cs__link">コーポレートサイト</p>
+                </a>
+            </div>
+            <div class="footer__copy">
+                <small>&copy; 2021 Creation.co.,Ltd</small>
+            </div>
+        </footer>
+    </body>
 </html>
+
