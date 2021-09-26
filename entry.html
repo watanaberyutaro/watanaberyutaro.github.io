@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500;600;700&amp;family=Open+Sans:wght@600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&amp;display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+</head>
+    <body>
+      <header id="header">
+        <div class="nav-wrapper"><!-- ②ナビゲーションメニュー -->
+                <nav class="header-nav">
+                  <ul class="nav-list">
+                  <li class="nav-item"><a href="index.html">ホーム</a></li>
+                  <li class="nav-item"><a href="work.html">会社を知る</a></li>
+                  <li class="nav-item"><a href="human.html">仲間を知る</a></li>
+                  <li class="nav-item"><a href="message.html">採用担当者からあなたへ</a></li>
+                  <li class="nav-item"><a href="recruit.html">採用情報</a></li>
+                  </ul>
+                </nav>
+              </div>
+            <div class="burger-btn">
+                <div class="h-nav__menu" id="headerNav">
+                  <div><span></span></div>
+                </div>
+            </div>
+            </div>
+            <div class="header">
+              <a href="index.html"><img class="header__logo" src="assets/img/logo.png" alt="Creation Co,Ltd"></a></h1>
+              <nav>
+                <ul class="header__gnav">
+                  <li><a href="work.html">会社を知る</a></li>
+                  <li><a href="human.html" class="nav__item">仲間を知る</a></li>
+                  <li><a href="message.html" class="nav__item">採用担当者からあなたへ</a></li>
+                  <li> <a href="recruitMidcareer.html" class="nav__item">採用情報</a></li>
+                  <li class="header__gnav-btn"><a href="entry.html">ENTRY</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+          <main>
+            <title>Contact - 株式会社Creation</title>
+            <div class="space-100"></div>
+            <section>
+            <div class="contact__wrap">
+            <div class="inner">
+            <h3 class="contact__wrap-ttl">フォームからのお問い合わせ</h3>
+            <div id="mw_wp_form_mw-wp-form-152" class="mw_wp_form mw_wp_form_input  ">
+                                <form method="post" action="{{ route('contacts.entry') }}" enctype="multipart/form-data"><p class="contact__wrap-text">記入内容を確認後、弊社よりご連絡させていただきます。
+            なお、基本的にメールでのご返信となりますが、お電話/FAXでの返信を希望される場合は、あらかじめお知らせください。
+            ※は必須項目となりますので、必ずご入力ください。</p>
+            <div class="contact__form">
+            <!-- @if ($message)
+            <div id="modal-content" class="error" onclick="modal_onclick_close()">
+                    <div id="modal-close" role="alert" aria-live="polite" aria-atomic="true" class="alert alert-danger" onclick="modal_onclick_close()" >
+                        {{ $message }}</a>
+                    </div>
+                </div>
+            @endif
+            <script type="text/javascript">
+            function modal_onclick_close(){
+                document.getElementById("modal-content").style.display = "none";
+            }
+            </script> -->
+            <div>
+            <label>お名前<span class="span">※</span></label>
+            <input type="text" name="name" size="60" required>
+            </div>
+            <div>
+            <label>フリガナ<span class="span">※</span></label>
+            <input type="text" name="kana" size="60" required>
+            </div>
+            <div>
+            <label>貴社名<span class="span">※</span></label>
+            <input type="text" name="company" size="60" required>
+            </div>
+            <div>
+            <label>お電話番号<span class="span">※</span></label>
+            <span class="mwform-tel-field">
+                <input type="text" name="tel0" class="tel" size="6" maxlength="5" required data-conv-half-alphanumeric="true">
+                -	<input type="text" name="tel1" class="tel" size="5" maxlength="4" required data-conv-half-alphanumeric="true">
+                -	<input type="text" name="tel2" class="tel" size="5" maxlength="4" required data-conv-half-alphanumeric="true">
+            </span>
+            <input type="hidden" name="tel[separator]" value="-">
+            </div>
+            <div>
+            <label>メールアドレス<span class="span">※</span></label>
+            <input type="email" name="email" id="email" class="email wide" size="60" required data-conv-half-alphanumeric="true">
+            </div>
+            <div>
+            <label for="">お問い合わせ内容<span class="span">※</span></label>
+            <textarea name="contents" id="contents" class="contents" cols="50" rows="5" required></textarea>
+            </div>
+            </div>
+            <div class="btn__submit">
+            <input type="submit" name="submitConfirm" value="送信" class="submit">
+            </div><input type="hidden" id="mw_wp_form_token" name="mw_wp_form_token" value="389b754cea"><input type="hidden" name="_wp_http_referer" value="/contact/"><input type="hidden" name="mw-wp-form-form-id" value="152"><input type="hidden" name="mw-wp-form-form-verify-token" value="c86523ee30ac7c367025841e17826facc03bcbb2"><input type="hidden" id="mw_wp_form_token" name="mw_wp_form_token" value="389b754cea"><input type="hidden" name="_wp_http_referer" value="/contact/"><input type="hidden" name="mw-wp-form-form-id" value="152"><input type="hidden" name="mw-wp-form-form-verify-token" value="c86523ee30ac7c367025841e17826facc03bcbb2"></form>
+            </div>
+            </div>
+            </div>
+            </section></main>
+          <footer class="footer">
+            <div class="footer__links">
+                <a href="/work" class="nav__item">会社を知る</a>
+                <a href="/human" class="nav__item">仲間を知る</a>
+                <a href="/message" class="nav__item">採用担当者からあなたへ</a>
+                <a href="/recruitNewgraduates" class="nav__item">採用情報</a>
+            </div>
+            <div class="footer__bottom">
+                <a href="https://creation2016.co.jp/" class="footer__link">
+                    <img src="https://creation2016.co.jp/wp-content/themes/creation/assets/img/common/icon-logo.png" alt="logo" class="footer__logo">
+                    <p class="cs__link">コーポレートサイト</p>
+                </a>
+            </div>
+            <div class="footer__copy">
+                <small>&copy; 2021 Creation.co.,Ltd</small>
+            </div>
+        </footer>
+    </body>
+    <script>
+        $('.burger-btn').on('click',function(){
+      $('.burger-btn').toggleClass('close');
+      $('.nav-wrapper').fadeToggle(500);
+      $('body').toggleClass('noscroll');
+    });
+      </script>
+</html>
